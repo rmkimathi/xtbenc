@@ -1,0 +1,1 @@
+"-c:v h264_nvenc -qp 28 -g 25","-c:v hevc_nvenc -qp 28 -g 25"

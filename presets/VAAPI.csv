@@ -1,0 +1,1 @@
+"-vf 'format=nv12,hwupload' -c:v h264_vaapi -qp 28 -g 25","-vf 'format=p010,hwupload' -c:v hevc_vaapi -qp 28 -g 25","-vf 'format=nv12,hwupload' -c:v vp9_vaapi","-vf 'format=p010,hwupload' -c:v vp9_vaapi"
