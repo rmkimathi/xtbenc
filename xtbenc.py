@@ -36,12 +36,12 @@ with open('presets/NVENC.csv', newline='') as csvfile:
        nvenc = (Tup4)
 
 
-layout = [[sg.Text('Input', size=(7,1)), sg.InputText(key='_infile_', size=(115,1)), sg.FileBrowse(size=(8,1))],
-		  [sg.Text('Output', size=(7,1)), sg.InputText(key='_outfile_', size=(115,1)), sg.SaveAs(size=(8,1))],
+layout = [[sg.Text('Input', size=(7,1)), sg.InputText(key='_infile_', size=(116,1)), sg.FileBrowse(size=(8,1))],
+		  [sg.Text('Output', size=(7,1)), sg.InputText(key='_outfile_', size=(116,1)), sg.SaveAs(size=(8,1))],
 		  
 		  [sg.Frame(layout=[[sg.Radio('CPU', "RADIO1", default=True, key='_CPU', enable_events=True), sg.Radio('QSV', "RADIO1", key='_QSV', enable_events=True), sg.Radio('VAAPI', "RADIO1", key='_VAAPI', enable_events=True), sg.Radio('NVENC', "RADIO1", key='_NVENC', enable_events=True)]], title='CODEC',title_color='red', relief=sg.RELIEF_SUNKEN, tooltip='Use these to set flags')],
 		  
-		  [sg.Frame(layout=[[sg.Combo(values=cpu, default_value='-c:v libx264 -preset superfast -crf 28 -g 25', size=(130, 1), key='_editor_')]], title='Extra Options (after input):')],
+		  [sg.Frame(layout=[[sg.Combo(values=cpu, default_value='-c:v libx264 -preset superfast -crf 28 -g 25', size=(131, 1), key='_editor_')]], title='Extra Options (after input):')],
 	  
 		  [sg.Button('ffprobe_in'), sg.Button('ffprobe_out')],
 		
