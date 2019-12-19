@@ -11,15 +11,15 @@ sudo apt install python3-tk
 ```
 
 # Usage
-ffmpeg.exe and ffprobe.exe should be in env path or drop your static binaries in the same folder as xtbenc. Additional arguments can be added by editting the csv files in the presets folder.
+ffmpeg.exe and ffprobe.exe should be in env path or drop your static binaries in the same folder as xtbenc. Additional arguments can be typed in directly in the options combo or permanently added by editting the csv files in the presets folder.
 
 # Reference
-(https://github.com/PySimpleGUI/PySimpleGUI)
+[PySimpleGUI](https://github.com/PySimpleGUI/PySimpleGUI)
 
-(https://docs.python.org/3.6/library/shlex.html)
+[Shlex](https://docs.python.org/3.6/library/shlex.html)
 
-(https://docs.python.org/3.6/library/subprocess.html)
+[Subprocess](https://docs.python.org/3.6/library/subprocess.html)
 
-(https://docs.python.org/3.6/library/csv.html)
+[CSV](https://docs.python.org/3.6/library/csv.html)
 
-(https://github.com/fabianlee/blogcode/tree/master/python)
+[Live loop](https://github.com/fabianlee/blogcode/tree/master/python)
