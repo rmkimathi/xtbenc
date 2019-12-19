@@ -30,3 +30,5 @@ ffmpeg.exe and ffprobe.exe should be in env path or drop your static binaries in
 [CSV](https://docs.python.org/3.6/library/csv.html)
 
 [Live loop](https://github.com/fabianlee/blogcode/tree/master/python)
+
+[FFmpeg](https://www.ffmpeg.org/download.html)
