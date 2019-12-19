@@ -14,7 +14,7 @@ pyinstaller --windowed --icon=xtbenc.ico --add-data="presets;presets" xtbenc.py 
 ```
 
 # Usage
-ffmpeg.exe and ffprobe.exe should be in env path or drop your static binaries in the same folder as xtbenc. ffmpeg arguments can be typed in directly in the "Extra Options" combo or permanently added by editting the csv files in the presets folder.
+ffmpeg.exe and ffprobe.exe should be in env path or drop your static binaries in the same folder as xtbenc. ffmpeg arguments can be typed in directly in the "Extra Options" combo or permanently added by editing the csv files in the presets folder.
 
 # Reference
 [PySimpleGUI](https://github.com/PySimpleGUI/PySimpleGUI)
