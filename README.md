@@ -1,6 +1,8 @@
 # XTB Encoder
 xtbenc is a gui for ffmpeg. It combines the beauty of GUI with the power of commandline for geeks!
 
+(Fast Forward MPEG) An open source multimedia project for working with audio and video. Based on the "libavcodec" A/V codec library and "libavformat" multiplexing framework, FFmpeg is a command-line utility that can encode and decode a variety of media formats. Started in 2000 by Fabrice Bellard, FFmpeg can be compiled to run under all popular operating systems. -Ency
+
 ![Options](images/xtbenc-01.png)
 
 # Resources
