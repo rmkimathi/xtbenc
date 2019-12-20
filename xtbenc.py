@@ -131,7 +131,7 @@ while True:
 		print( )
 		print('OUTPUT:', video_output)
 		print( )
-		print('ARGUMENTS:', cmd2)
+		print('ARGS:', cmd2)
 		print( )
 		window.refresh()
 		invoke_process_popen_poll_live(cmd2)
