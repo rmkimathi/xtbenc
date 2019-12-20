@@ -133,8 +133,6 @@ while True:
 		print( )
 		print('ARGUMENTS:', cmd2)
 		print( )
-		print('Converting file ... this will take a while.. the program has NOT locked up...')
-		print( )
 		window.refresh()
 		invoke_process_popen_poll_live(cmd2)
 		print( )
