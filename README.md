@@ -11,6 +11,7 @@ Warning - tkinter + Python 3.7.3 and later, including 3.8 has problems. Python 3
 python3 -m pip install pysimplegui
 sudo apt install python3-tk
 
+python3 -m pip install pyinstaller
 pyinstaller --add-data="presets:presets" xtbenc.py # Ubuntu
 pyinstaller --windowed --icon=xtbenc.ico --add-data="presets;presets" xtbenc.py # Windows
 ```
