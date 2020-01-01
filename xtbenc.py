@@ -9,51 +9,31 @@ import shlex
 import csv
 
 
-
 sg.ChangeLookAndFeel('LightGreen')
 
 
-
 with open('presets/CPU.csv', newline='') as csvfile:
-
     spamreader = csv.reader(csvfile , delimiter=',', quotechar='"')
-
     for Tup1 in spamreader:
-
        cpu = (Tup1)
 
 
-
 with open('presets/QSV.csv', newline='') as csvfile:
-
     spamreader = csv.reader(csvfile , delimiter=',', quotechar='"')
-
     for Tup2 in spamreader:
-
        qsv = (Tup2)
 
 
-
 with open('presets/VAAPI.csv', newline='') as csvfile:
-
     spamreader = csv.reader(csvfile , delimiter=',', quotechar='"')
-
     for Tup3 in spamreader:
-
        vaapi = (Tup3)    
 
 
-
 with open('presets/NVENC.csv', newline='') as csvfile:
-
     spamreader = csv.reader(csvfile , delimiter=',', quotechar='"')
-
     for Tup4 in spamreader:
-
        nvenc = (Tup4)
-
-
-
 
 
 layout = [
@@ -87,17 +67,9 @@ layout = [
 ]
 
 
-
-
-
-
-
 window = sg.Window('XTB Encoder')
 
-
-
 window.Layout(layout)
-
 
 
 # Loop taking in user input
@@ -114,56 +86,31 @@ while True:
 
 
 
-
-
-
-
 	video_in = values['_infile_']
-
 	video_out = values['_outfile_']
-    
-    
+
 	args1 = "ffmpeg -v verbose -y -i"
 	args2 = "ffmpeg -v verbose -y -vaapi_device ':0' -i"
 
-
 	myargs = values['_editor_']
 
-
-
-
-
 	ffp2 = ['ffprobe', '-hide_banner', video_in]
-
 	ffp5 = ['ffprobe', '-hide_banner', video_out]
-
 
 
 	cmd1 = [] # Radio button selection
 
-
-
 	if values['_CPU'] == True: cmd1 = args1 + " " + "'%s'"%video_in + " " + myargs + " " + "'%s'"%video_out
-
-	
 
 	if values['_QSV'] == True: cmd1 = args1 + " " + "'%s'"%video_in + " " + myargs + " " + "'%s'"%video_out
 
-	
-
 	if values['_VAAPI'] == True: cmd1 = args2 + " " + "'%s'"%video_in + " " + myargs + " " + "'%s'"%video_out
-
-	
 
 	if values['_NVENC'] == True: cmd1 = args1 + " " + "'%s'"%video_in + " " + myargs + " " + "'%s'"%video_out
 
 
-
 	cmd2 = shlex.split(cmd1)
 
-	
-
-	
 
 	if event is '_CPU': window['_editor_'].Update(values=cpu, set_to_index=0)
 
@@ -175,10 +122,6 @@ while True:
 
 
 
-
-
-
-
 	def invoke_process_popen_poll_live(command):
 
 		process = subprocess.Popen(command,
@@ -187,19 +130,13 @@ while True:
                                    stderr=subprocess.PIPE,
                                    universal_newlines=True)
 
-
-
 		while True:
 
 			err = process.stderr.readline()
 
-			
-
 			# used to check for empty output in Python2, but seems
 
 			# to work with just poll in 2.7.12 and 3.5.2
-
-			
 
 			#if errors == '' and process.poll() is not None:
 
@@ -218,12 +155,6 @@ while True:
 		rc = process.poll()
 
 		return rc    
-
-
-
-
-
-
 
 
 
