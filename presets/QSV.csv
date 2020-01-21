@@ -1,1 +1,1 @@
-"-c:v h264_qsv -global_quality 28 -g 25","-c:v h264_qsv -ss 00:01:00 -to 00:02:00 -global_quality 28 -g 25","-c:v hevc_qsv -pix_fmt nv12 -global_quality 28 -g 25","-c:v hevc_qsv -pix_fmt p010le -global_quality 28 -g 25"
+"-c:v h264_qsv -global_quality 28 -g 25","-c:v h264_qsv -ss 00:01:00 -to 00:02:00 -global_quality 28 -g 25","-c:v hevc_qsv -preset veryfast -bf 3 -global_quality 28 -g 25","-c:v hevc_qsv -pix_fmt p010le -preset veryfast -bf 3 -global_quality 28 -g 25"
