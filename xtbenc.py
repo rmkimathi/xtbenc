@@ -60,7 +60,7 @@ layout = [
      sg.Button('ffprobe_out')],
     
     [sg.Frame(layout=[
-        [sg.Output(size=(130, 30))]], title='LOG')],
+        [sg.Output(size=(130, 20))]], title='LOG')],
     
     [sg.Button('Convert'),
      sg.SimpleButton('Exit', button_color=('white','firebrick3'))]
