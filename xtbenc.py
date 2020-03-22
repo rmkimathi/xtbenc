@@ -80,7 +80,7 @@ while True:
 
 	#print(event, values) #debug
 
-	if event is 'Exit' or event is None:
+	if event == 'Exit' or event is None:
 
 		break           # Exit button clicked
 
@@ -100,25 +100,25 @@ while True:
 
 	cmd1 = [] # Radio button selection
 
-	if values['_CPU'] == True: cmd1 = args1 + " " + "'%s'"%video_in + " " + myargs + " " + "'%s'"%video_out
+	if values['_CPU'] is True: cmd1 = args1 + " " + "'%s'"%video_in + " " + myargs + " " + "'%s'"%video_out
 
-	if values['_QSV'] == True: cmd1 = args1 + " " + "'%s'"%video_in + " " + myargs + " " + "'%s'"%video_out
+	if values['_QSV'] is True: cmd1 = args1 + " " + "'%s'"%video_in + " " + myargs + " " + "'%s'"%video_out
 
-	if values['_VAAPI'] == True: cmd1 = args2 + " " + "'%s'"%video_in + " " + myargs + " " + "'%s'"%video_out
+	if values['_VAAPI'] is True: cmd1 = args2 + " " + "'%s'"%video_in + " " + myargs + " " + "'%s'"%video_out
 
-	if values['_NVENC'] == True: cmd1 = args1 + " " + "'%s'"%video_in + " " + myargs + " " + "'%s'"%video_out
+	if values['_NVENC'] is True: cmd1 = args1 + " " + "'%s'"%video_in + " " + myargs + " " + "'%s'"%video_out
 
 
 	cmd2 = shlex.split(cmd1)
 
 
-	if event is '_CPU': window['_editor_'].Update(values=cpu, set_to_index=0)
+	if event == '_CPU': window['_editor_'].Update(values=cpu, set_to_index=0)
 
-	if event is '_QSV': window['_editor_'].Update(values=qsv, set_to_index=0)
+	if event == '_QSV': window['_editor_'].Update(values=qsv, set_to_index=0)
 
-	if event is '_VAAPI': window['_editor_'].Update(values=vaapi, set_to_index=0)
+	if event == '_VAAPI': window['_editor_'].Update(values=vaapi, set_to_index=0)
 
-	if event is '_NVENC': window['_editor_'].Update(values=nvenc, set_to_index=0)
+	if event == '_NVENC': window['_editor_'].Update(values=nvenc, set_to_index=0)
 
 
 
@@ -158,7 +158,7 @@ while True:
 
 
 
-	if event is 'ffprobe_in':
+	if event == 'ffprobe_in':
 
 		print('MEDIA INFO (Input):')
 
@@ -170,7 +170,7 @@ while True:
 
 
 
-	if event is 'ffprobe_out':
+	if event == 'ffprobe_out':
 
 		print('MEDIA INFO (Output):')
 
@@ -182,7 +182,7 @@ while True:
 
 
 
-	if event is 'Convert':
+	if event == 'Convert':
 
 		print('INPUT:', video_in)
 
