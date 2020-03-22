@@ -67,7 +67,7 @@ layout = [
 ]
 
 
-window = sg.Window('XTB Encoder')
+window = sg.Window('XTB Encoder', icon='./presets/xtbenc.png')
 
 window.Layout(layout)
 
