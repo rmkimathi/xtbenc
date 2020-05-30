@@ -53,7 +53,7 @@ layout = [
     ], title='CODEC',title_color='red', relief=sg.RELIEF_SUNKEN, tooltip='Use these to set flags')],
     
     [sg.Frame(layout=[
-        [sg.Combo(values=cpu, default_value='-c:v libx264 -preset superfast -crf 28 -g 25', size=(131, 1), key='_editor_')]
+        [sg.Combo(values=cpu, default_value='', size=(131, 1), key='_editor_')]
     ], title='Extra Options (after input):')],
     
     [sg.Button('ffprobe_in'),
@@ -67,7 +67,7 @@ layout = [
 ]
 
 
-window = sg.Window('XTB Encoder', icon='./presets/xtbenc.png')
+window = sg.Window('XTB Encoder', icon='presets/xtbenc.png') # icon='presets/xtbenc.ico' for Windows
 
 window.Layout(layout)
 
