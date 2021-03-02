@@ -53,14 +53,14 @@ layout = [
     ], title='CODEC',title_color='red', relief=sg.RELIEF_SUNKEN, tooltip='Use these to set flags')],
     
     [sg.Frame(layout=[
-        [sg.Combo(values=cpu, default_value='', size=(131, 1), key='_editor_')]
+        [sg.Combo(values=cpu, default_value='', size=(134, 1), key='_editor_')]
     ], title='Extra Options (after input):')],
     
     [sg.Button('ffprobe_in'),
      sg.Button('ffprobe_out')],
     
     [sg.Frame(layout=[
-        [sg.Output(size=(130, 20), font=("Consolas", 10))]], title='LOG')],
+        [sg.Output(size=(134, 20), font=("Consolas", 10))]], title='LOG')],
     
     [sg.Button('Convert'),
      sg.SimpleButton('Exit', button_color=('white','firebrick3'))]
@@ -90,7 +90,7 @@ while True:
 	video_out = values['_outfile_']
 
 	args1 = "ffmpeg -v verbose -y -i"
-	args2 = "ffmpeg -v verbose -y -vaapi_device ':0' -i"
+	args2 = "ffmpeg -v verbose -y -vaapi_device '/dev/dri/renderD128' -i"
 
 	myargs = values['_editor_']
 
