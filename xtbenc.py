@@ -53,7 +53,7 @@ layout = [
     ], title='CODEC',title_color='red', relief=sg.RELIEF_SUNKEN, tooltip='Use these to set flags')],
     
     [sg.Frame(layout=[
-        [sg.Combo(values=cpu, default_value='', size=(134, 1), key='_editor_')]
+        [sg.Combo(values=cpu, default_value='', size=(134, 20), auto_size_text=False, key='_editor_')]
     ], title='Extra Options (after input):')],
     
     [sg.Button('ffprobe_in'),
