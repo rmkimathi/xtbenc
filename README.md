@@ -8,12 +8,17 @@ _"(Fast Forward MPEG) An open source multimedia project for working with audio a
 # Resources
 Warning - tkinter + Python 3.7.3 and later, including 3.8 has problems. Python 3.6 is the recommended version for PySimpleGUI. In Ubuntu if you get an error similar to: ImportError: No module named tkinter then you need to install tkinter.
 ```
-python3 -m pip install pysimplegui
 sudo apt install python3-tk
 
-python3 -m pip install pyinstaller
-pyinstaller --add-data="presets:presets" xtbenc.py # Ubuntu
-pyinstaller --windowed --icon=xtbenc.ico --add-data="presets;presets" xtbenc.py # Windows
+pip3 install pysimplegui
+
+pip3 install pyinstaller
+
+# Ubuntu
+pyinstaller --add-data="presets:presets" xtbenc.py
+
+# Windows
+pyinstaller --windowed --icon=xtbenc.ico --add-data="presets;presets" xtbenc.py
 ```
 
 # Usage
